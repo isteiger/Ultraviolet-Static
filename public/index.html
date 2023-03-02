@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <title>Unblocker | Wake Students</title>
-    <meta name="description" content="Unblock basically any site. Well, the ones that should be viewed on a school device." />
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e" />
-    <link rel="shortcut icon" content="favicon.ico" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="uv/uv.bundle.js" defer></script>
-    <script src="uv/uv.config.js" defer></script>
-    <script src="register-sw.js" defer></script>
-    <script src="search.js" defer></script>
-    <script src="index.js" defer></script>
-</head>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPPT1DW0MD"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-<body>
-    <div title="Wake Students Logo" class="flex-center logo-wrapper header-center">
-        <img class="logo" src="circleLogo.png" alt="Wake Students" />
-        <h1>Wake Students Proxy</h1>
-    </div>
-    <div class="flex-center desc" style="text-align: center;">
-        <p>
-            Bypass all filters, with just this site. Type below to begin.
-        </p>
-    </div>
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-    <form id="uv-form" class="flex-center">
-        <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden" />
-        <input id="uv-address" type="text" placeholder="Search the web" />
-    </form>
-    <div class="desc left-margin">
-        <p id="uv-error"></p>
-        <pre id="uv-error-code"></pre>
-    </div>
-    <footer>
-        <a title="Back to Main Site" href="https://wakestudents.web.app">Back to Main Site</a>
-        <a title="Proxy Source Code" href="https://github.com/wakestudents/Ultraviolet-Static">Source Code</a>
+            gtag('config', 'G-ZPPT1DW0MD');
+        </script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+        <title>Unblocker | Wake Students</title>
+        <meta name="description" content="Unblock basically any site. Well, the ones that should be viewed on a school device." />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e" />
+        <link rel="shortcut icon" content="favicon.ico" />
+        <link rel="stylesheet" href="index.css" />
+        <script src="uv/uv.bundle.js" defer></script>
+        <script src="uv/uv.config.js" defer></script>
+        <script src="register-sw.js" defer></script>
+        <script src="search.js" defer></script>
+        <script src="index.js" defer></script>
+    </head>
 
-        <a title="License information" href="credits.html" style="margin-left: auto">License Info</a>
-        <a title="The official deployment repository for Ultraviolet" href="https://github.com/titaniumnetwork-dev/Ultraviolet-App">Based on Ultraviolet</a>
+    <body>
+        <div title="Wake Students Logo" class="flex-center logo-wrapper header-center">
+            <img class="logo" src="circleLogo.png" alt="Wake Students" />
+            <h1>Wake Students Proxy</h1>
+        </div>
+        <div class="flex-center desc" style="text-align: center;">
+            <p>
+                Bypass all filters, with just this site. Type below to begin.
+            </p>
+        </div>
 
-    </footer>
-</body>
+        <form id="uv-form" class="flex-center">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden" />
+            <input id="uv-address" type="text" placeholder="Search the web" />
+        </form>
+        <div class="desc left-margin">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+        </div>
+        <footer>
+            <a title="Back to Main Site" href="https://wakestudents.web.app">Back to Main Site</a>
+            <a title="Proxy Source Code" href="https://github.com/wakestudents/Ultraviolet-Static">Source Code</a>
+
+            <a title="License information" href="credits.html" style="margin-left: auto">License Info</a>
+            <a title="The official deployment repository for Ultraviolet" href="https://github.com/titaniumnetwork-dev/Ultraviolet-App">Based on Ultraviolet</a>
+
+        </footer>
+    </body>
 
 </html>
