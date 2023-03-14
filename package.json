@@ -3,15 +3,12 @@
   "main": "lib/index.js",
   "version": "1.0.2",
   "type": "module",
-  "scripts": {
-    "build": "node scripts/build.js"
-  },
   "files": [
     "public",
     "lib"
   ],
   "peerDependencies": {
-    "@titaniumnetwork-dev/ultraviolet": "^1.0.4"
+    "@titaniumnetwork-dev/ultraviolet": "^1.0.8-beta"
   },
   "devDependencies": {
     "eslint": "^8.23.0",
